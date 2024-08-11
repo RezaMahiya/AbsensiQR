@@ -52,6 +52,6 @@ app.post("/", async (req, res) => {
   res.render("index");
 });
 
-const PORT = process.env.PORT || 5000; app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`); });
-module.exports = app;
+const port = process.env.PORT || 5000; 
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`); });
